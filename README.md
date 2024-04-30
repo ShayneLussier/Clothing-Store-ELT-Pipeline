@@ -4,7 +4,7 @@ This project implements a comprehensive data pipeline for generating and process
 ## :ledger: Index
 
 - [About](#beginner-about)
-- [How?](#zap-how?)
+- [How?](#zap-how)
 - [File Structure](#file_folder-file-structure)
 - [Resources](#page_facing_up-resources)
 - [Snowflake Setup](#snowflake-snowflake-db-setup)
@@ -14,7 +14,7 @@ This project began with the goal of practicing dashboarding skills using Tableau
 Rather than generating perfectly formatted data, I purposely created the original data in a different format, requiring the use of a transformation tool like dbt-core (Data Build Tool). This allowed me to learn and incorporate various frameworks, including Airflow, Docker, Snowflake, and AWS Cloud services.
 The resulting pipeline generates synthetic transaction data, cleans and transforms it using dbt-core, and loads it into a data warehouse. The data is then visualized in a Tableau dashboard. While the pipeline may not be optimized, with some steps out of order, the goal was to gain hands-on experience with multiple data engineering tools and frameworks within a real-world project context. This project did finally allow me to practice my dashboarding skills but also exposed me to a diverse range of data engineering technologies
 
-## :zap: How?
+## :zap: How
 Here's a summary explaining how the DAG works:
     The dag/dbt-pipeline DAG performs the following steps:
 
