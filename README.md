@@ -4,10 +4,10 @@ This project implements a comprehensive data pipeline for generating and process
 ## :ledger: Index
 
 - [About](#beginner-about)
-- [How?](#zap-usage)
+- [How?](#zap-how?)
 - [File Structure](#file_folder-file-structure)
 - [Resources](#page_facing_up-resources)
-- [Gallery](#camera-gallery)
+- [Snowflake Setup](#snowflake-snowflake-db-setup)
 
 ##  :beginner: About
 This project began with the goal of practicing dashboarding skills using Tableau. However, unable to find a suitable dataset, I decided to create my own synthetic transaction data for a clothing store franchise. As I built the data generation process, I realized it could be applied in an Airflow DAG for an incremental ELT (Extract, Load, Transform) process, simulating a continuous data stream.
