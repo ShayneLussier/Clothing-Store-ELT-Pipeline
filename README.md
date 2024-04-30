@@ -18,13 +18,13 @@ The resulting pipeline generates synthetic transaction data, cleans and transfor
 Here's a summary explaining how the DAG works:
     The dag/dbt-pipeline DAG performs the following steps:
 
-1 - **Fetch Data Sources:** It retrieves a list of all sold items by the franchise from an S3 bucket, where the prices are in Indian Rupees (INR).
-2 - **Get Max Customer ID:** The DAG fetches the maximum customer ID from the database to ensure that new customers are not assigned duplicate IDs after their first purchase.
-3 - **Generate Transactions:** It generates a specified number of transactions, including both new and returning customers, following a predetermined ratio. The sale prices of items are converted to CAD by looking up the conversion rate on the transaction date through an api call.
-4 - **Upload Raw Data:** The raw transaction data is uploaded to an S3 bucket.
-5 - **Create Staging Tables:** The DAG creates or replaces the staging tables in Snowflake and copies the raw data using dbt (Data Build Tool).
-6 - **Transform and Load:** The raw data is transformed and loaded into the analytics warehouse using dbt.
-7 - **Connect to Tableau Dashboard:** The analytics warehouse is connected to a Tableau dashboard, which immediately reflects the changes in the data.
+1. **Fetch Data Sources:** It retrieves a list of all sold items by the franchise from an S3 bucket, where the prices are in Indian Rupees (INR).
+2. **Get Max Customer ID:** The DAG fetches the maximum customer ID from the database to ensure that new customers are not assigned duplicate IDs after their first purchase.
+3. **Generate Transactions:** It generates a specified number of transactions, including both new and returning customers, following a predetermined ratio. The sale prices of items are converted to CAD by looking up the conversion rate on the transaction date through an api call.
+4. **Upload Raw Data:** The raw transaction data is uploaded to an S3 bucket.
+5. **Create Staging Tables:** The DAG creates or replaces the staging tables in Snowflake and copies the raw data using dbt (Data Build Tool).
+6. **Transform and Load:** The raw data is transformed and loaded into the analytics warehouse using dbt.
+7. **Connect to Tableau Dashboard:** The analytics warehouse is connected to a Tableau dashboard, which immediately reflects the changes in the data.
 
 ![Diagram](images/workflow.png)
 
