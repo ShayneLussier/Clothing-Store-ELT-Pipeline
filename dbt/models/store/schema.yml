@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: store_staging
+    description: 'Source for store.staging'
+    database: store
+    schema: staging
+    tables:
+      - name: raw_data
+        description: 'Source for store.staging.raw_data'

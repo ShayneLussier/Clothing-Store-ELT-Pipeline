@@ -1,0 +1,14 @@
+dags/scripts/*
+dags/__pycache__
+dags/note.txt
+config/*.py
+dags/example_bash_operator.py
+postgres_data/
+logs/*
+*.env
+
+!/dags/dbt-pipeline.py
+!/dags/scripts/transactions.py
+!/dags/scripts/files.py
+!/dags/scripts/rates.py
+!/logs/.gitkeep
