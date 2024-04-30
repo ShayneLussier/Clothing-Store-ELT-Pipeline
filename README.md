@@ -57,7 +57,8 @@ Links to resources used during this project.
 
 https://www.youtube.com/watch?v=toSAAgLUHuk&ab_channel=JieJenn (dbt-core)\
 https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html (airflow docker setup)\
-https://www.amazon.ca/Fundamentals-Data-Visualization-Informative-Compelling/dp/1492031089 (data viz)-https://docs.snowflake.com/en/user-guide/security-column-ddm-use (snowflake data masking for sensitive data)\
+https://www.amazon.ca/Fundamentals-Data-Visualization-Informative-Compelling/dp/1492031089 (data viz)\
+https://docs.snowflake.com/en/user-guide/security-column-ddm-use (snowflake data masking for sensitive data)
 
 ##  :snowflake: Snowflake DB Setup
 ```
